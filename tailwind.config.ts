@@ -63,19 +63,32 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Custom colors for Pulse Robot
-				pulse: {
-					"50": "#fff7ed",
-					"100": "#ffedd5",
-					"200": "#fed7aa",
-					"300": "#fdba74",
-					"400": "#fb923c",
-					"500": "#f97316", // Primary orange
-					"600": "#ea580c",
-					"700": "#c2410c",
-					"800": "#9a3412",
-					"900": "#7c2d12",
-					"950": "#431407",
+				// Custom colors for Jumper Studio
+				jumper: {
+					"50": "#fff5f2",
+					"100": "#ffe8e0",
+					"200": "#ffd4c7",
+					"300": "#ffb8a0",
+					"400": "#ff8e6b",
+					"500": "#FA4721", // Primary orange
+					"600": "#e53e19",
+					"700": "#c13315",
+					"800": "#a02d17",
+					"900": "#832b19",
+					"950": "#47130a",
+				},
+				purple: {
+					"50": "#faf7ff",
+					"100": "#f1ebff",
+					"200": "#e5daff",
+					"300": "#d0baff",
+					"400": "#b591ff",
+					"500": "#9967ff",
+					"600": "#8143A7", // Brand purple
+					"700": "#7c3aed",
+					"800": "#6b21d4",
+					"900": "#581c87",
+					"950": "#3b0764",
 				},
 				dark: {
 					"900": "#121212", // Almost black

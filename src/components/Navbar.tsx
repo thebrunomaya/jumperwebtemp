@@ -52,17 +52,18 @@ const Navbar = () => {
             e.preventDefault();
             scrollToTop();
           }}
-          aria-label="Pulse Robot"
+          aria-label="Jumper Studio"
         >
-          <img 
-            src="/logo.svg" 
-            alt="Pulse Robot Logo" 
-            className="h-7 sm:h-8" 
-          />
+          <div className="flex items-center space-x-2">
+            <div className="w-8 h-8 bg-gradient-to-r from-jumper-500 to-purple-600 rounded-lg flex items-center justify-center">
+              <span className="text-white font-bold text-lg">X</span>
+            </div>
+            <span className="text-xl font-bold text-gray-900">Jumper Studio</span>
+          </div>
         </a>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex space-x-8">
+        <nav className="hidden md:flex items-center space-x-8">
           <a 
             href="#" 
             className="nav-link"
@@ -71,10 +72,17 @@ const Navbar = () => {
               scrollToTop();
             }}
           >
-            Home
+            Início
           </a>
-          <a href="#features" className="nav-link">About</a>
-          <a href="#details" className="nav-link">Contact</a>
+          <a href="#sobre" className="nav-link">Sobre</a>
+          <a href="#servicos" className="nav-link">Serviços</a>
+          <a href="#contato" className="nav-link">Contato</a>
+          <a 
+            href="#contato" 
+            className="ml-4 bg-jumper-500 hover:bg-jumper-600 text-white font-medium py-2 px-6 rounded-full transition-all duration-300"
+          >
+            Falar Conosco
+          </a>
         </nav>
 
         {/* Mobile menu button - increased touch target */}
@@ -92,7 +100,7 @@ const Navbar = () => {
         "fixed inset-0 z-40 bg-white flex flex-col pt-16 px-6 md:hidden transition-all duration-300 ease-in-out",
         isMenuOpen ? "opacity-100 translate-x-0" : "opacity-0 translate-x-full pointer-events-none"
       )}>
-        <nav className="flex flex-col space-y-8 items-center mt-8">
+        <nav className="flex flex-col space-y-6 items-center mt-8">
           <a 
             href="#" 
             className="text-xl font-medium py-3 px-6 w-full text-center rounded-lg hover:bg-gray-100" 
@@ -103,27 +111,47 @@ const Navbar = () => {
               document.body.style.overflow = '';
             }}
           >
-            Home
+            Início
           </a>
           <a 
-            href="#features" 
+            href="#sobre" 
             className="text-xl font-medium py-3 px-6 w-full text-center rounded-lg hover:bg-gray-100" 
             onClick={() => {
               setIsMenuOpen(false);
               document.body.style.overflow = '';
             }}
           >
-            About
+            Sobre
           </a>
           <a 
-            href="#details" 
+            href="#servicos" 
             className="text-xl font-medium py-3 px-6 w-full text-center rounded-lg hover:bg-gray-100" 
             onClick={() => {
               setIsMenuOpen(false);
               document.body.style.overflow = '';
             }}
           >
-            Contact
+            Serviços
+          </a>
+          <a 
+            href="#contato" 
+            className="text-xl font-medium py-3 px-6 w-full text-center rounded-lg hover:bg-gray-100" 
+            onClick={() => {
+              setIsMenuOpen(false);
+              document.body.style.overflow = '';
+            }}
+          >
+            Contato
+          </a>
+          <a 
+            href="#contato" 
+            className="bg-jumper-500 hover:bg-jumper-600 text-white font-medium py-3 px-8 rounded-full transition-all duration-300 mt-4"
+            onClick={() => {
+              setIsMenuOpen(false);
+              document.body.style.overflow = '';
+            }}
+          >
+            Falar Conosco
           </a>
         </nav>
       </div>
