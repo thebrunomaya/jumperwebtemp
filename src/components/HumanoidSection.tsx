@@ -91,20 +91,20 @@ const HumanoidSection = () => {
       className="relative" 
       style={{ height: '300vh' }}
     >
-      <section className="w-full h-screen py-10 md:py-16 sticky top-0 overflow-hidden bg-white" id="why-humanoid">
+      <section className="w-full h-screen py-10 md:py-16 sticky top-0 overflow-hidden bg-white" id="sobre">
         <div className="container px-6 lg:px-8 mx-auto h-full flex flex-col">
           <div className="mb-2 md:mb-3">
             <div className="flex items-center gap-4 mb-2 md:mb-2 pt-8 sm:pt-6 md:pt-4">
-              <div className="pulse-chip opacity-0 animate-fade-in" style={{
+              <div className="jumper-chip opacity-0 animate-fade-in" style={{
                 animationDelay: "0.1s"
               }}>
-                <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-pulse-500 text-white mr-2">02</span>
-                <span>Humanoid</span>
+                <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-jumper-500 text-white mr-2">02</span>
+                <span>Propósito</span>
               </div>
             </div>
             
             <h2 className="section-title text-3xl sm:text-4xl md:text-5xl font-display font-bold mb-1 md:mb-2">
-              Why Humanoid
+              Nosso Propósito
             </h2>
           </div>
           
@@ -120,7 +120,7 @@ const HumanoidSection = () => {
               }}
             >
               <div
-                className="absolute inset-0 z-0 bg-gradient-to-b from-pulse-900/40 to-dark-900/80"
+                className="absolute inset-0 z-0 bg-gradient-to-b from-jumper-900/40 to-dark-900/80"
                 style={{
                   backgroundImage: `url(${visionCard1})`,
                   backgroundSize: "cover",
@@ -131,26 +131,26 @@ const HumanoidSection = () => {
               
               <div className="absolute top-4 right-4 z-20">
                 <div className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm text-white">
-                  <span className="text-sm font-medium">Physical Navigation</span>
+                  <span className="text-sm font-medium">Análise de Processos</span>
                 </div>
               </div>
               
               <div className="relative z-10 p-5 sm:p-6 md:p-8 h-full flex items-center">
                 <div className="max-w-lg">
                   <h3 className="text-2xl sm:text-3xl md:text-4xl font-display text-white font-bold leading-tight mb-4">
-                    We're giving AI a way to navigate the physical world
+                    Estudamos seus processos de <span className="text-jumper-300">aquisição e vendas</span>
                   </h3>
                   <p className="text-white/80 text-base sm:text-lg leading-relaxed mb-6">
-                    Our humanoid robots understand spatial relationships, move naturally through environments, and interact with objects just like humans do.
+                    Identificamos o que pode ser melhorado e sistematizado, analisando cada etapa do seu funil de vendas para encontrar oportunidades de otimização.
                   </p>
                   <div className="flex items-center gap-4">
                     <div className="flex items-center gap-2">
-                      <div className="w-3 h-3 bg-pulse-500 rounded-full"></div>
-                      <span className="text-white/70 text-sm">Spatial Awareness</span>
+                      <div className="w-3 h-3 bg-jumper-500 rounded-full"></div>
+                      <span className="text-white/70 text-sm">Análise Detalhada</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <div className="w-3 h-3 bg-pulse-500 rounded-full"></div>
-                      <span className="text-white/70 text-sm">Object Recognition</span>
+                      <div className="w-3 h-3 bg-jumper-500 rounded-full"></div>
+                      <span className="text-white/70 text-sm">Otimização</span>
                     </div>
                   </div>
                 </div>
@@ -169,7 +169,7 @@ const HumanoidSection = () => {
               }}
             >
               <div
-                className="absolute inset-0 z-0 bg-gradient-to-b from-pulse-900/40 to-dark-900/80"
+                className="absolute inset-0 z-0 bg-gradient-to-b from-purple-900/40 to-dark-900/80"
                 style={{
                   backgroundImage: `url(${visionCard2})`,
                   backgroundSize: "cover",
@@ -180,26 +180,26 @@ const HumanoidSection = () => {
               
               <div className="absolute top-4 right-4 z-20">
                 <div className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm text-white">
-                  <span className="text-sm font-medium">Adaptive Intelligence</span>
+                  <span className="text-sm font-medium">Tecnologia & Consultoria</span>
                 </div>
               </div>
               
               <div className="relative z-10 p-5 sm:p-6 md:p-8 h-full flex items-center">
                 <div className="max-w-lg">
                   <h3 className="text-2xl sm:text-3xl md:text-4xl font-display text-white font-bold leading-tight mb-4">
-                    We're bringing adaptive intelligence to where humans work
+                    Aplicamos <span className="text-purple-300">tecnologia automatizada</span> para escalar resultados
                   </h3>
                   <p className="text-white/80 text-base sm:text-lg leading-relaxed mb-6">
-                    Our robots learn from human behavior, adapt to workplace dynamics, and enhance productivity without disrupting natural workflows.
+                    Fornecemos soluções completas de marketing e consultoria estratégica, implementando a solução ou aconselhando clientes que preferem executar internamente.
                   </p>
                   <div className="flex items-center gap-4">
                     <div className="flex items-center gap-2">
-                      <div className="w-3 h-3 bg-pulse-500 rounded-full"></div>
-                      <span className="text-white/70 text-sm">Learning Capability</span>
+                      <div className="w-3 h-3 bg-purple-500 rounded-full"></div>
+                      <span className="text-white/70 text-sm">Implementação</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <div className="w-3 h-3 bg-pulse-500 rounded-full"></div>
-                      <span className="text-white/70 text-sm">Workflow Integration</span>
+                      <div className="w-3 h-3 bg-purple-500 rounded-full"></div>
+                      <span className="text-white/70 text-sm">Consultoria</span>
                     </div>
                   </div>
                 </div>
@@ -218,7 +218,7 @@ const HumanoidSection = () => {
               }}
             >
               <div
-                className="absolute inset-0 z-0 bg-gradient-to-b from-pulse-900/40 to-dark-900/80"
+                className="absolute inset-0 z-0 bg-gradient-to-b from-jumper-900/40 to-purple-900/60"
                 style={{
                   backgroundImage: `url(${visionCard3})`,
                   backgroundSize: "cover",
@@ -229,26 +229,26 @@ const HumanoidSection = () => {
               
               <div className="absolute top-4 right-4 z-20">
                 <div className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm text-white">
-                  <span className="text-sm font-medium">Human Connection</span>
+                  <span className="text-sm font-medium">Especialização</span>
                 </div>
               </div>
               
               <div className="relative z-10 p-5 sm:p-6 md:p-8 h-full flex items-center">
                 <div className="max-w-lg">
                   <h3 className="text-2xl sm:text-3xl md:text-4xl font-display text-white font-bold leading-tight mb-4">
-                    We're creating companions, <span className="text-[#FC4D0A]">not replacements</span>
+                    Especialistas em <span className="text-jumper-300">Ecommerce, Fitness</span> e Saúde Digital
                   </h3>
                   <p className="text-white/80 text-base sm:text-lg leading-relaxed mb-6">
-                    Our mission is to enhance human potential through collaboration, building robots that understand emotions, respect boundaries, and form meaningful connections.
+                    Focamos em nichos específicos onde temos expertise comprovada, garantindo resultados efetivos para pequenas e médias empresas destes setores.
                   </p>
                   <div className="flex items-center gap-4">
                     <div className="flex items-center gap-2">
-                      <div className="w-3 h-3 bg-pulse-500 rounded-full"></div>
-                      <span className="text-white/70 text-sm">Emotional Intelligence</span>
+                      <div className="w-3 h-3 bg-jumper-500 rounded-full"></div>
+                      <span className="text-white/70 text-sm">Ecommerce</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <div className="w-3 h-3 bg-pulse-500 rounded-full"></div>
-                      <span className="text-white/70 text-sm">Collaborative Spirit</span>
+                      <div className="w-3 h-3 bg-jumper-500 rounded-full"></div>
+                      <span className="text-white/70 text-sm">Fitness & Saúde</span>
                     </div>
                   </div>
                 </div>
