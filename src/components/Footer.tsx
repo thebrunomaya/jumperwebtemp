@@ -1,19 +1,50 @@
 
 import React from "react";
+
 const Footer = () => {
-  return <footer className="w-full bg-white py-0">
+  return (
+    <footer className="w-full bg-dark-900 text-white py-12">
       <div className="section-container">
-        <p className="text-center text-gray-600 text-sm">
-          This template takes inspiration from{" "}
-          <a href="https://x.com/BrettFromDJ" target="_blank" rel="noopener noreferrer" className="text-pulse-500 hover:underline">
-            DesignJoy's
-          </a>{" "}
-          BUILD WARS design, built entirely with Lovable by{" "}
-          <a href="https://x.com/rezaul_arif" target="_blank" rel="noopener noreferrer" className="text-pulse-500 hover:underline">
-            Rezaul Arif
-          </a>
-        </p>
+        <div className="max-w-4xl mx-auto text-center space-y-6">
+          {/* Company Info */}
+          <div className="space-y-2">
+            <h3 className="text-2xl font-display font-bold">
+              <span className="bg-gradient-to-r from-jumper-500 to-jumper-600 bg-clip-text text-transparent">
+                Jumper Studio
+              </span>
+            </h3>
+            <p className="text-gray-300 text-lg">
+              Libertando empresários através de automação inteligente
+            </p>
+          </div>
+          
+          {/* Specialties */}
+          <div className="space-y-2">
+            <h4 className="text-lg font-semibold text-jumper-300">Especialidades</h4>
+            <p className="text-gray-400">
+              Ecommerce, Fitness & Saúde Digital
+            </p>
+          </div>
+          
+          {/* Contact */}
+          <div className="space-y-2">
+            <a 
+              href="mailto:bruno@jumperstudio.com" 
+              className="text-jumper-400 hover:text-jumper-300 transition-colors font-medium"
+            >
+              bruno@jumperstudio.com
+            </a>
+          </div>
+          
+          {/* Divider */}
+          <div className="border-t border-gray-700 pt-6">
+            <p className="text-gray-500 text-sm">
+              © 2025 Jumper Studio. Todos os direitos reservados.
+            </p>
+          </div>
+        </div>
       </div>
-    </footer>;
+    </footer>
+  );
 };
 export default Footer;

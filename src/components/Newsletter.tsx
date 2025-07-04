@@ -1,54 +1,97 @@
 import React, { useState } from "react";
 import { toast } from "@/components/ui/use-toast";
+
 const Newsletter = () => {
   const [email, setEmail] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
+  
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!email) {
       toast({
-        title: "Please enter your email address",
+        title: "Por favor, insira seu email",
         variant: "destructive"
       });
       return;
     }
     setIsSubmitting(true);
 
-    // Simulate API call
+    // Open email client
+    window.location.href = `mailto:bruno@jumperstudio.com?subject=Quero me libertar do trabalho repetitivo&body=Olá, gostaria de conversar sobre automação para meu negócio. Meu email é: ${email}`;
+    
     setTimeout(() => {
       toast({
-        title: "Thank you for subscribing!",
-        description: "You'll receive updates about Atlas soon."
+        title: "Obrigado pelo interesse!",
+        description: "Entraremos em contato em breve."
       });
       setEmail("");
       setIsSubmitting(false);
     }, 1000);
   };
-  return <section id="newsletter" className="bg-white py-0">
+
+  const handleDirectContact = () => {
+    window.location.href = "mailto:bruno@jumperstudio.com?subject=Quero me libertar do trabalho repetitivo";
+  };
+
+  return (
+    <section id="contato" className="bg-white py-16 md:py-24">
       <div className="section-container opacity-0 animate-on-scroll">
-        <div className="max-w-6xl mx-auto">
-          <div className="flex items-center gap-4 mb-6">
-            <div className="pulse-chip">
-              <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-pulse-500 text-white mr-2">05</span>
-              <span>Newsletter</span>
+        <div className="max-w-4xl mx-auto text-center">
+          <div className="flex justify-center mb-6">
+            <div className="jumper-chip">
+              <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-jumper-500 text-white mr-2">05</span>
+              <span>Contato</span>
             </div>
           </div>
           
-          <h2 className="text-5xl font-display font-bold mb-4 text-left">Subscribe to the newsletter</h2>
-          <p className="text-xl text-gray-700 mb-10 text-left">
-            Be first to hear about breakthroughs, partnerships, and deployment opportunities
+          <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">
+            Pronto para se <span className="text-jumper-500">Libertar</span>?
+          </h2>
+          <p className="text-xl text-gray-700 mb-12 max-w-3xl mx-auto">
+            Vamos conversar sobre como podemos automatizar seus processos e multiplicar seus resultados.
           </p>
           
-          <form onSubmit={handleSubmit} className="flex flex-col md:flex-row gap-4 items-start md:items-center">
-            <div className="relative flex-grow">
-              <input type="email" value={email} onChange={e => setEmail(e.target.value)} placeholder="Email address" className="w-full px-6 py-4 rounded-full border border-gray-200 focus:outline-none focus:ring-2 focus:ring-pulse-500 text-gray-700" required />
+          <div className="mb-8">
+            <p className="text-lg text-gray-600 mb-4">Entre em contato diretamente:</p>
+            <a 
+              href="mailto:bruno@jumperstudio.com" 
+              className="text-xl font-semibold text-jumper-500 hover:text-jumper-600 transition-colors"
+            >
+              bruno@jumperstudio.com
+            </a>
+          </div>
+          
+          <div className="max-w-md mx-auto">
+            <form onSubmit={handleSubmit} className="space-y-4">
+              <input 
+                type="email" 
+                value={email} 
+                onChange={(e) => setEmail(e.target.value)} 
+                placeholder="Seu melhor email" 
+                className="w-full px-6 py-4 rounded-full border border-gray-200 focus:outline-none focus:ring-2 focus:ring-jumper-500 text-gray-700" 
+                required 
+              />
+              <button 
+                type="submit" 
+                disabled={isSubmitting}
+                className="w-full bg-gradient-to-r from-jumper-500 to-jumper-600 text-white font-medium py-4 px-8 rounded-full hover:from-jumper-600 hover:to-jumper-700 transition-all duration-300 shadow-lg hover:shadow-xl"
+              >
+                {isSubmitting ? "Enviando..." : "Começar Agora"}
+              </button>
+            </form>
+            
+            <div className="mt-6">
+              <button 
+                onClick={handleDirectContact}
+                className="text-jumper-500 hover:text-jumper-600 font-medium transition-colors"
+              >
+                Ou clique aqui para enviar email diretamente
+              </button>
             </div>
-            <button type="submit" disabled={isSubmitting} className="bg-pulse-500 hover:bg-pulse-600 text-white font-medium py-4 px-10 rounded-full transition-all duration-300 md:ml-4">
-              {isSubmitting ? "Submitting..." : "Submit"}
-            </button>
-          </form>
+          </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
 export default Newsletter;
