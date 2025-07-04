@@ -1,5 +1,8 @@
 
 import React, { useEffect, useRef, useState } from "react";
+import visionCard1 from "@/assets/vision-card-1.jpg";
+import visionCard2 from "@/assets/vision-card-2.jpg";
+import visionCard3 from "@/assets/vision-card-3.jpg";
 
 const HumanoidSection = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -119,7 +122,7 @@ const HumanoidSection = () => {
               <div
                 className="absolute inset-0 z-0 bg-gradient-to-b from-pulse-900/40 to-dark-900/80"
                 style={{
-                  backgroundImage: "url('/background-section1.png')",
+                  backgroundImage: `url(${visionCard1})`,
                   backgroundSize: "cover",
                   backgroundPosition: "top center",
                   backgroundBlendMode: "overlay"
@@ -128,7 +131,7 @@ const HumanoidSection = () => {
               
               <div className="absolute top-4 right-4 z-20">
                 <div className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm text-white">
-                  <span className="text-sm font-medium">The vision</span>
+                  <span className="text-sm font-medium">Physical Navigation</span>
                 </div>
               </div>
               
@@ -137,6 +140,19 @@ const HumanoidSection = () => {
                   <h3 className="text-2xl sm:text-3xl md:text-4xl font-display text-white font-bold leading-tight mb-4">
                     We're giving AI a way to navigate the physical world
                   </h3>
+                  <p className="text-white/80 text-base sm:text-lg leading-relaxed mb-6">
+                    Our humanoid robots understand spatial relationships, move naturally through environments, and interact with objects just like humans do.
+                  </p>
+                  <div className="flex items-center gap-4">
+                    <div className="flex items-center gap-2">
+                      <div className="w-3 h-3 bg-pulse-500 rounded-full"></div>
+                      <span className="text-white/70 text-sm">Spatial Awareness</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <div className="w-3 h-3 bg-pulse-500 rounded-full"></div>
+                      <span className="text-white/70 text-sm">Object Recognition</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -155,7 +171,7 @@ const HumanoidSection = () => {
               <div
                 className="absolute inset-0 z-0 bg-gradient-to-b from-pulse-900/40 to-dark-900/80"
                 style={{
-                  backgroundImage: "url('/background-section2.png')",
+                  backgroundImage: `url(${visionCard2})`,
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                   backgroundBlendMode: "overlay"
@@ -164,7 +180,7 @@ const HumanoidSection = () => {
               
               <div className="absolute top-4 right-4 z-20">
                 <div className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm text-white">
-                  <span className="text-sm font-medium">The vision</span>
+                  <span className="text-sm font-medium">Adaptive Intelligence</span>
                 </div>
               </div>
               
@@ -173,6 +189,19 @@ const HumanoidSection = () => {
                   <h3 className="text-2xl sm:text-3xl md:text-4xl font-display text-white font-bold leading-tight mb-4">
                     We're bringing adaptive intelligence to where humans work
                   </h3>
+                  <p className="text-white/80 text-base sm:text-lg leading-relaxed mb-6">
+                    Our robots learn from human behavior, adapt to workplace dynamics, and enhance productivity without disrupting natural workflows.
+                  </p>
+                  <div className="flex items-center gap-4">
+                    <div className="flex items-center gap-2">
+                      <div className="w-3 h-3 bg-pulse-500 rounded-full"></div>
+                      <span className="text-white/70 text-sm">Learning Capability</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <div className="w-3 h-3 bg-pulse-500 rounded-full"></div>
+                      <span className="text-white/70 text-sm">Workflow Integration</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -191,7 +220,7 @@ const HumanoidSection = () => {
               <div
                 className="absolute inset-0 z-0 bg-gradient-to-b from-pulse-900/40 to-dark-900/80"
                 style={{
-                  backgroundImage: "url('/background-section3.png')",
+                  backgroundImage: `url(${visionCard3})`,
                   backgroundSize: "cover",
                   backgroundPosition: "bottom center",
                   backgroundBlendMode: "overlay"
@@ -200,7 +229,7 @@ const HumanoidSection = () => {
               
               <div className="absolute top-4 right-4 z-20">
                 <div className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm text-white">
-                  <span className="text-sm font-medium">The vision</span>
+                  <span className="text-sm font-medium">Human Connection</span>
                 </div>
               </div>
               
@@ -209,6 +238,19 @@ const HumanoidSection = () => {
                   <h3 className="text-2xl sm:text-3xl md:text-4xl font-display text-white font-bold leading-tight mb-4">
                     We're creating companions, <span className="text-[#FC4D0A]">not replacements</span>
                   </h3>
+                  <p className="text-white/80 text-base sm:text-lg leading-relaxed mb-6">
+                    Our mission is to enhance human potential through collaboration, building robots that understand emotions, respect boundaries, and form meaningful connections.
+                  </p>
+                  <div className="flex items-center gap-4">
+                    <div className="flex items-center gap-2">
+                      <div className="w-3 h-3 bg-pulse-500 rounded-full"></div>
+                      <span className="text-white/70 text-sm">Emotional Intelligence</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <div className="w-3 h-3 bg-pulse-500 rounded-full"></div>
+                      <span className="text-white/70 text-sm">Collaborative Spirit</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
