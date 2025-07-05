@@ -9,7 +9,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-2">
             <h3 className="text-2xl font-haffer font-medium tracking-tight leading-tight" style={{ letterSpacing: "-0.01em" }}>
-              <span className="bg-gradient-to-r from-jumper-500 to-jumper-600 bg-clip-text text-transparent">
+              <span className="bg-jumper-gradient bg-clip-text text-transparent">
                 Jumper Studio
               </span>
             </h3>

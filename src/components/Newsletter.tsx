@@ -52,10 +52,10 @@ const Newsletter = () => {
           </p>
           
           <div className="mb-8">
-            <p className="text-lg text-gray-600 mb-4">Entre em contato diretamente:</p>
+            <p className="text-lg font-haffer text-gray-600 mb-4">Entre em contato diretamente:</p>
             <a 
               href="mailto:bruno@jumperstudio.com" 
-              className="text-xl font-semibold text-jumper-500 hover:text-jumper-600 transition-colors"
+              className="text-xl font-haffer font-semibold text-jumper-500 hover:text-jumper-600 transition-colors"
             >
               bruno@jumperstudio.com
             </a>
@@ -68,13 +68,13 @@ const Newsletter = () => {
                 value={email} 
                 onChange={(e) => setEmail(e.target.value)} 
                 placeholder="Seu melhor email" 
-                className="w-full px-6 py-4 rounded-full border border-gray-200 focus:outline-none focus:ring-2 focus:ring-jumper-500 text-gray-700" 
+                className="w-full px-6 py-4 rounded-full border border-gray-200 focus:outline-none focus:ring-2 focus:ring-jumper-500 font-haffer text-gray-700 transition-all duration-300" 
                 required 
               />
               <button 
                 type="submit" 
                 disabled={isSubmitting}
-                className="w-full bg-gradient-to-r from-jumper-500 to-jumper-600 text-white font-medium py-4 px-8 rounded-full hover:from-jumper-600 hover:to-jumper-700 transition-all duration-300 shadow-lg hover:shadow-xl"
+                className="w-full bg-jumper-gradient hover:opacity-90 text-white font-haffer font-medium py-4 px-8 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-[1.02] active:scale-[0.98]"
               >
                 {isSubmitting ? "Enviando..." : "Começar Agora"}
               </button>
@@ -83,7 +83,7 @@ const Newsletter = () => {
             <div className="mt-6">
               <button 
                 onClick={handleDirectContact}
-                className="text-jumper-500 hover:text-jumper-600 font-medium transition-colors"
+                className="text-jumper-500 hover:text-jumper-600 font-haffer font-medium transition-colors underline decoration-jumper-500/30 hover:decoration-jumper-600"
               >
                 Ou clique aqui para enviar email diretamente
               </button>

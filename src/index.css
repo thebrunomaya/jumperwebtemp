@@ -114,24 +114,38 @@
   /* Smooth scrolling */
   html {
     scroll-behavior: smooth;
+    scroll-padding-top: 80px; /* Account for fixed header */
   }
 
-  /* Custom scrollbar */
+  /* Custom scrollbar with brand colors */
   ::-webkit-scrollbar {
     width: 8px;
   }
 
   ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: #f8f9fa;
   }
 
   ::-webkit-scrollbar-thumb {
-    background: #888;
+    background: linear-gradient(135deg, #FA4721, #8143A7);
     border-radius: 10px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    opacity: 0.8;
+  }
+
+  /* Reduced motion support */
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+    
+    html {
+      scroll-behavior: auto;
+    }
   }
 }
 
@@ -170,15 +184,15 @@
   }
   
   .button-primary {
-    @apply bg-jumper-500 hover:bg-jumper-600 text-white font-medium py-3 px-6 rounded-full transition-all duration-300 shadow-md hover:shadow-lg transform hover:scale-[1.02] active:scale-[0.98];
+    @apply bg-jumper-gradient hover:opacity-90 text-white font-haffer font-medium py-3 px-6 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-[1.02] active:scale-[0.98];
   }
 
   .button-secondary {
-    @apply bg-transparent border border-gray-300 hover:border-jumper-500 text-gray-800 hover:text-jumper-500 font-medium py-3 px-6 rounded-full transition-all duration-300;
+    @apply bg-transparent border-2 border-gray-300 hover:border-jumper-500 text-gray-800 hover:text-jumper-500 font-haffer font-medium py-3 px-6 rounded-full transition-all duration-300 hover:bg-jumper-gradient-soft;
   }
   
   .nav-link {
-    @apply relative text-gray-800 hover:text-jumper-500 py-2 transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-jumper-500 after:transition-all hover:after:w-full;
+    @apply relative text-gray-800 hover:text-jumper-500 py-2 font-haffer font-medium transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-jumper-gradient after:transition-all hover:after:w-full;
   }
 }
 

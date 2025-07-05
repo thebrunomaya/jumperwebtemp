@@ -82,14 +82,14 @@ const Hero = () => {
             >
               <a 
                 href="#contato" 
-                className="flex items-center justify-center group w-full sm:w-auto text-center bg-gradient-to-r from-jumper-500 to-purple-600 text-white font-medium py-4 px-8 rounded-full transition-all duration-300 hover:shadow-lg transform hover:scale-[1.02]"
+                className="flex items-center justify-center group w-full sm:w-auto text-center bg-jumper-gradient hover:opacity-90 text-white font-haffer font-medium py-4 px-8 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-[1.02] active:scale-[0.98]"
               >
                 Quero Me Libertar
                 <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
               </a>
               <a 
                 href="#sobre" 
-                className="flex items-center justify-center group w-full sm:w-auto text-center border-2 border-gray-300 hover:border-jumper-500 text-gray-800 hover:text-jumper-500 font-medium py-4 px-8 rounded-full transition-all duration-300"
+                className="flex items-center justify-center group w-full sm:w-auto text-center border-2 border-gray-300 hover:border-jumper-500 text-gray-800 hover:text-jumper-500 font-haffer font-medium py-4 px-8 rounded-full transition-all duration-300 hover:bg-jumper-gradient-soft"
               >
                 Nosso Manifesto
               </a>
@@ -101,16 +101,16 @@ const Hero = () => {
               style={{ animationDelay: "0.9s" }}
             >
               <div className="text-center">
-                <div className="text-2xl sm:text-3xl font-bold text-jumper-500 mb-1">3x</div>
-                <div className="text-sm text-gray-600">Mais leads</div>
+                <div className="text-2xl sm:text-3xl font-haffer font-bold text-jumper-500 mb-1">3x</div>
+                <div className="text-sm font-haffer text-gray-600">Mais leads</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl sm:text-3xl font-bold text-purple-600 mb-1">67%</div>
-                <div className="text-sm text-gray-600">Menos tempo manual</div>
+                <div className="text-2xl sm:text-3xl font-haffer font-bold text-purple-600 mb-1">67%</div>
+                <div className="text-sm font-haffer text-gray-600">Menos tempo manual</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl sm:text-3xl font-bold text-jumper-500 mb-1">40+</div>
-                <div className="text-sm text-gray-600">PMEs transformadas</div>
+                <div className="text-2xl sm:text-3xl font-haffer font-bold text-jumper-500 mb-1">40+</div>
+                <div className="text-sm font-haffer text-gray-600">PMEs transformadas</div>
               </div>
             </div>
           </div>
@@ -126,21 +126,21 @@ const Hero = () => {
                   <div className="h-3 bg-white/40 rounded-full animate-pulse" style={{ animationDelay: "0.4s" }}></div>
                 </div>
                 <div className="text-white text-center py-8">
-                  <div className="text-2xl font-bold mb-2">Automação Inteligente</div>
-                  <div className="text-white/80">Sistemas que trabalham para você</div>
+                  <div className="text-2xl font-haffer font-semibold mb-2">Automação Inteligente</div>
+                  <div className="text-white/80 font-haffer">Sistemas que trabalham para você</div>
                 </div>
                 <div className="grid grid-cols-2 gap-4">
                   <div className="h-16 bg-white/20 rounded-lg flex items-center justify-center">
-                    <div className="text-white font-medium">CRM</div>
+                    <div className="text-white font-haffer font-medium">CRM</div>
                   </div>
                   <div className="h-16 bg-white/20 rounded-lg flex items-center justify-center">
-                    <div className="text-white font-medium">Email</div>
+                    <div className="text-white font-haffer font-medium">Email</div>
                   </div>
                   <div className="h-16 bg-white/20 rounded-lg flex items-center justify-center">
-                    <div className="text-white font-medium">Analytics</div>
+                    <div className="text-white font-haffer font-medium">Analytics</div>
                   </div>
                   <div className="h-16 bg-white/20 rounded-lg flex items-center justify-center">
-                    <div className="text-white font-medium">Social</div>
+                    <div className="text-white font-haffer font-medium">Social</div>
                   </div>
                 </div>
               </div>

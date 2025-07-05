@@ -91,10 +91,10 @@ export default {
 					"950": "#3b0764",
 				},
 				dark: {
-					"900": "#121212", // Almost black
-					"800": "#1e1e1e",
-					"700": "#2d2d2d",
-					"600": "#3d3d3d",
+					"900": "#000000", // True black
+					"800": "#0A0A0A", // Slightly lighter black
+					"700": "#1A1A1A",
+					"600": "#2A2A2A",
 				},
 			},
 			borderRadius: {
@@ -150,15 +150,16 @@ export default {
 				'float': 'float 6s ease-in-out infinite'
 			},
 			backgroundImage: {
-				'hero-gradient': 'linear-gradient(90deg, hsla(24, 100%, 83%, 1) 0%, hsla(341, 91%, 68%, 1) 100%)',
-				'hero-gradient-2': 'linear-gradient(90deg, hsla(39, 100%, 77%, 1) 0%, hsla(22, 90%, 57%, 1) 100%)',
-				'pulse-gradient': 'linear-gradient(180deg, rgba(249,115,22,0.8) 0%, rgba(249,115,22,0) 100%)',
+				'jumper-gradient': 'linear-gradient(135deg, #FA4721 0%, #8143A7 100%)',
+				'jumper-gradient-soft': 'linear-gradient(135deg, rgba(250, 71, 33, 0.1) 0%, rgba(129, 67, 167, 0.1) 100%)',
+				'hero-gradient': 'linear-gradient(135deg, #FA4721 0%, #8143A7 100%)',
+				'dark-gradient': 'linear-gradient(135deg, #000000 0%, #0A0A0A 100%)',
 			},
 			fontFamily: {
 				'sans': ['Inter', 'sans-serif'],
 				'haffer': ['Haffer', 'Inter', 'system-ui', 'sans-serif'],
-				'display': ['Haffer', 'Inter', 'sans-serif'],
-				'inter': ['Inter', 'sans-serif'],
+				'display': ['Haffer', 'Inter', 'system-ui', 'sans-serif'],
+				'inter': ['Inter', 'system-ui', 'sans-serif'],
 			},
 			boxShadow: {
 				'elegant': '0 4px 20px rgba(0, 0, 0, 0.08)',
