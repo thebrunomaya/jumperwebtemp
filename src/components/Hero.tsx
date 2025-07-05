@@ -63,8 +63,8 @@ const Hero = () => {
             </div>
             
             <h1 
-              className="section-title text-3xl sm:text-4xl lg:text-5xl xl:text-6xl leading-tight opacity-0 animate-fade-in" 
-              style={{ animationDelay: "0.3s" }}
+              className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-haffer font-light leading-tight tracking-tight opacity-0 animate-fade-in" 
+              style={{ animationDelay: "0.3s", letterSpacing: "-0.02em" }}
             >
               Liberte seu negócio<br className="hidden sm:inline" />do trabalho repetitivo
             </h1>

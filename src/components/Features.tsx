@@ -49,8 +49,8 @@ const FeatureCard = ({ icon, title, description, index }: FeatureCardProps) => {
       <div className="rounded-full bg-jumper-50 w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center text-jumper-500 mb-4 sm:mb-5">
         {icon}
       </div>
-      <h3 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3">{title}</h3>
-      <p className="text-gray-600 text-sm sm:text-base">{description}</p>
+      <h3 className="text-xl sm:text-2xl font-haffer font-medium mb-2 sm:mb-3" style={{ letterSpacing: "-0.01em" }}>{title}</h3>
+      <p className="text-gray-600 font-haffer font-normal leading-relaxed text-sm sm:text-base">{description}</p>
     </div>
   );
 };
@@ -95,10 +95,10 @@ const Features = () => {
             <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-jumper-500 text-white mr-2">03</span>
             <span>Serviços</span>
           </div>
-          <h2 className="section-title mb-3 sm:mb-4 opacity-0 fade-in-element">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-haffer font-normal tracking-tight leading-tight mb-3 sm:mb-4 opacity-0 fade-in-element" style={{ letterSpacing: "-0.02em" }}>
             Como Libertamos <br className="hidden sm:block" />Seu Negócio
           </h2>
-          <p className="section-subtitle mx-auto opacity-0 fade-in-element">
+          <p className="text-lg md:text-xl font-haffer text-gray-600 leading-relaxed mt-4 max-w-3xl mx-auto opacity-0 fade-in-element">
             Soluções completas de automação e marketing estratégico para pequenas e médias empresas.
           </p>
         </div>

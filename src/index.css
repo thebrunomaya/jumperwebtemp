@@ -1,13 +1,19 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 @font-face {
-  font-family: 'Brockmann';
-  src: url('/brockmann-medium-webfont.ttf') format('truetype'),
-       url('/brockmann-medium.otf') format('opentype');
-  font-weight: 500;
+  font-family: 'Haffer';
+  src: url('https://jumper.studio/wp-content/uploads/2025/07/HafferVF.ttf') format('truetype');
+  font-weight: 100 900;
   font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Haffer';
+  src: url('https://jumper.studio/wp-content/uploads/2025/07/HafferItalicVF.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: italic;
   font-display: swap;
 }
 
@@ -102,7 +108,7 @@
   }
 
   body {
-    @apply bg-white text-black font-sans antialiased;
+    @apply bg-white text-black font-haffer antialiased;
   }
 
   /* Smooth scrolling */
@@ -139,7 +145,7 @@
   }
 
   .jumper-chip {
-    @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-jumper-100 text-jumper-600 border border-jumper-200;
+    @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-haffer font-medium bg-jumper-100 text-jumper-600 border border-jumper-200;
   }
   
   .section-container {
@@ -147,11 +153,12 @@
   }
 
   .section-title {
-    @apply text-3xl md:text-4xl lg:text-5xl font-display font-bold tracking-tight;
+    @apply text-4xl md:text-5xl lg:text-6xl font-haffer font-light tracking-tight leading-tight;
+    letter-spacing: -0.02em;
   }
 
   .section-subtitle {
-    @apply text-lg md:text-xl text-gray-600 mt-4 max-w-3xl;
+    @apply text-lg md:text-xl font-haffer font-normal leading-relaxed mt-4 max-w-3xl;
   }
 
   .glass-card {

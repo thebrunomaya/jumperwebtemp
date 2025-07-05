@@ -103,7 +103,7 @@ const HumanoidSection = () => {
               </div>
             </div>
             
-            <h2 className="section-title text-3xl sm:text-4xl md:text-5xl font-display font-bold mb-1 md:mb-2">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-haffer font-normal tracking-tight leading-tight mb-1 md:mb-2" style={{ letterSpacing: "-0.02em" }}>
               Nosso Propósito
             </h2>
           </div>
@@ -131,26 +131,26 @@ const HumanoidSection = () => {
               
               <div className="absolute top-4 right-4 z-20">
                 <div className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm text-white">
-                  <span className="text-sm font-medium">Análise de Processos</span>
+                  <span className="text-sm font-haffer font-medium">Análise de Processos</span>
                 </div>
               </div>
               
               <div className="relative z-10 p-5 sm:p-6 md:p-8 h-full flex items-center">
                 <div className="max-w-lg">
-                  <h3 className="text-2xl sm:text-3xl md:text-4xl font-display text-white font-bold leading-tight mb-4">
+                  <h3 className="text-2xl sm:text-3xl md:text-4xl font-haffer text-white font-medium leading-tight mb-4" style={{ letterSpacing: "-0.01em" }}>
                     Estudamos seus processos de <span className="text-jumper-300">aquisição e vendas</span>
                   </h3>
-                  <p className="text-white/80 text-base sm:text-lg leading-relaxed mb-6">
+                  <p className="text-white/80 text-base sm:text-lg font-haffer font-normal leading-relaxed mb-6">
                     Identificamos o que pode ser melhorado e sistematizado, analisando cada etapa do seu funil de vendas para encontrar oportunidades de otimização.
                   </p>
                   <div className="flex items-center gap-4">
                     <div className="flex items-center gap-2">
                       <div className="w-3 h-3 bg-jumper-500 rounded-full"></div>
-                      <span className="text-white/70 text-sm">Análise Detalhada</span>
+                      <span className="text-white/70 text-sm font-haffer">Análise Detalhada</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <div className="w-3 h-3 bg-jumper-500 rounded-full"></div>
-                      <span className="text-white/70 text-sm">Otimização</span>
+                      <span className="text-white/70 text-sm font-haffer">Otimização</span>
                     </div>
                   </div>
                 </div>
@@ -180,26 +180,26 @@ const HumanoidSection = () => {
               
               <div className="absolute top-4 right-4 z-20">
                 <div className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm text-white">
-                  <span className="text-sm font-medium">Tecnologia & Consultoria</span>
+                  <span className="text-sm font-haffer font-medium">Tecnologia & Consultoria</span>
                 </div>
               </div>
               
               <div className="relative z-10 p-5 sm:p-6 md:p-8 h-full flex items-center">
                 <div className="max-w-lg">
-                  <h3 className="text-2xl sm:text-3xl md:text-4xl font-display text-white font-bold leading-tight mb-4">
+                  <h3 className="text-2xl sm:text-3xl md:text-4xl font-haffer text-white font-medium leading-tight mb-4" style={{ letterSpacing: "-0.01em" }}>
                     Aplicamos <span className="text-purple-300">tecnologia automatizada</span> para escalar resultados
                   </h3>
-                  <p className="text-white/80 text-base sm:text-lg leading-relaxed mb-6">
+                  <p className="text-white/80 text-base sm:text-lg font-haffer font-normal leading-relaxed mb-6">
                     Fornecemos soluções completas de marketing e consultoria estratégica, implementando a solução ou aconselhando clientes que preferem executar internamente.
                   </p>
                   <div className="flex items-center gap-4">
                     <div className="flex items-center gap-2">
                       <div className="w-3 h-3 bg-purple-500 rounded-full"></div>
-                      <span className="text-white/70 text-sm">Implementação</span>
+                      <span className="text-white/70 text-sm font-haffer">Implementação</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <div className="w-3 h-3 bg-purple-500 rounded-full"></div>
-                      <span className="text-white/70 text-sm">Consultoria</span>
+                      <span className="text-white/70 text-sm font-haffer">Consultoria</span>
                     </div>
                   </div>
                 </div>
@@ -229,26 +229,26 @@ const HumanoidSection = () => {
               
               <div className="absolute top-4 right-4 z-20">
                 <div className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm text-white">
-                  <span className="text-sm font-medium">Especialização</span>
+                  <span className="text-sm font-haffer font-medium">Especialização</span>
                 </div>
               </div>
               
               <div className="relative z-10 p-5 sm:p-6 md:p-8 h-full flex items-center">
                 <div className="max-w-lg">
-                  <h3 className="text-2xl sm:text-3xl md:text-4xl font-display text-white font-bold leading-tight mb-4">
+                  <h3 className="text-2xl sm:text-3xl md:text-4xl font-haffer text-white font-medium leading-tight mb-4" style={{ letterSpacing: "-0.01em" }}>
                     Especialistas em <span className="text-jumper-300">Ecommerce, Fitness</span> e Saúde Digital
                   </h3>
-                  <p className="text-white/80 text-base sm:text-lg leading-relaxed mb-6">
+                  <p className="text-white/80 text-base sm:text-lg font-haffer font-normal leading-relaxed mb-6">
                     Focamos em nichos específicos onde temos expertise comprovada, garantindo resultados efetivos para pequenas e médias empresas destes setores.
                   </p>
                   <div className="flex items-center gap-4">
                     <div className="flex items-center gap-2">
                       <div className="w-3 h-3 bg-jumper-500 rounded-full"></div>
-                      <span className="text-white/70 text-sm">Ecommerce</span>
+                      <span className="text-white/70 text-sm font-haffer">Ecommerce</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <div className="w-3 h-3 bg-jumper-500 rounded-full"></div>
-                      <span className="text-white/70 text-sm">Fitness & Saúde</span>
+                      <span className="text-white/70 text-sm font-haffer">Fitness & Saúde</span>
                     </div>
                   </div>
                 </div>

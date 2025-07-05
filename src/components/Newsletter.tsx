@@ -44,10 +44,10 @@ const Newsletter = () => {
             </div>
           </div>
           
-          <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-haffer font-normal tracking-tight leading-tight mb-6" style={{ letterSpacing: "-0.02em" }}>
             Pronto para se <span className="text-jumper-500">Libertar</span>?
           </h2>
-          <p className="text-xl text-gray-700 mb-12 max-w-3xl mx-auto">
+          <p className="text-xl font-haffer font-normal leading-relaxed text-gray-700 mb-12 max-w-3xl mx-auto">
             Vamos conversar sobre como podemos automatizar seus processos e multiplicar seus resultados.
           </p>
           
