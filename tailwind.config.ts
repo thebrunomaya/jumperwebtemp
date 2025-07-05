@@ -63,8 +63,12 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Custom colors for Jumper Studio
+				// Jumper Studio brand colors
 				jumper: {
+					black: 'hsl(var(--jumper-black))',
+					white: 'hsl(var(--jumper-white))',
+					orange: 'hsl(var(--jumper-orange))',
+					purple: 'hsl(var(--jumper-purple))',
 					"50": "#fff5f2",
 					"100": "#ffe8e0",
 					"200": "#ffd4c7",
@@ -90,11 +94,22 @@ export default {
 					"900": "#581c87",
 					"950": "#3b0764",
 				},
-				dark: {
-					"900": "#000000", // True black
-					"800": "#0A0A0A", // Slightly lighter black
-					"700": "#1A1A1A",
-					"600": "#2A2A2A",
+				// Dark theme grays
+				gray: {
+					"50": "#f9fafb",
+					"100": "#f3f4f6", 
+					"200": "#e5e7eb",
+					"300": "#d1d5db",
+					"400": "#9ca3af",
+					"500": "#6b7280",
+					"600": "#4b5563",
+					"700": "#374151",
+					"800": "#1f2937",
+					"900": "#111827",
+					"950": "#030712",
+					"dark": "#181818", // Card background
+					"medium": "#404040", // Borders
+					"light": "#C7C7C7", // Muted text
 				},
 			},
 			borderRadius: {
@@ -155,10 +170,13 @@ export default {
 				'subtle-float': 'subtle-float 10s ease-in-out infinite'
 			},
 			backgroundImage: {
+				'gradient-primary': 'var(--gradient-primary)',
+				'gradient-secondary': 'var(--gradient-secondary)',
+				'gradient-accent': 'var(--gradient-accent)',
 				'jumper-gradient': 'linear-gradient(135deg, #FA4721 0%, #8143A7 100%)',
 				'jumper-gradient-soft': 'linear-gradient(135deg, rgba(250, 71, 33, 0.1) 0%, rgba(129, 67, 167, 0.1) 100%)',
-				'hero-gradient': 'linear-gradient(135deg, #FA4721 0%, #8143A7 100%)',
-				'dark-gradient': 'linear-gradient(135deg, #000000 0%, #0A0A0A 100%)',
+				'jumper-secondary': 'linear-gradient(135deg, #FA4721 0%, #181818 100%)',
+				'jumper-accent': 'linear-gradient(135deg, #8143A7 0%, #181818 100%)',
 			},
 			fontFamily: {
 				'sans': ['Inter', 'sans-serif'],
