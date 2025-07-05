@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
 import { ArrowRight } from "lucide-react";
-import headerBackground from "@/assets/header-background.jpg";
+import jumperGradientBg from "@/assets/jumper-gradient-bg.png";
 
 const Hero = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -41,11 +41,12 @@ const Hero = () => {
   
   return (
     <section 
-      className="overflow-hidden relative bg-cover" 
+      className="overflow-hidden relative bg-cover animate-subtle-float" 
       id="hero" 
       style={{
-        backgroundImage: `url(${headerBackground})`,
-        backgroundPosition: 'center 30%', 
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${jumperGradientBg})`,
+        backgroundPosition: 'center',
+        backgroundSize: 'cover',
         padding: isMobile ? '100px 12px 40px' : '120px 20px 60px'
       }}
     >
